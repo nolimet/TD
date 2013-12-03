@@ -35,7 +35,7 @@ public class ButtonToggleManager:MonoBehaviour {
 	}
 	
 	void OnMouseDown() {
-		if(GameObject.Find("Sound Manager")) {
+		/*if(GameObject.Find("Sound Manager")) {
 			AudioManager audioManager = GameObject.Find("Sound Manager").GetComponent<AudioManager>();
 
 			switch(id) {
@@ -46,6 +46,6 @@ public class ButtonToggleManager:MonoBehaviour {
 				audioManager.sfxEnabled = enabled;
 				break;
 			}
-		}
+		}*/
 	}
 }
