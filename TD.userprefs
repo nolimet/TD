@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Controls\SelectTower.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Bullets\Bullet1.cs">
     <Files>
-      <File FileName="Assets\Scrpts\Controls\SelectTower.cs" Line="16" Column="36" />
-      <File FileName="Assets\Scrpts\Controls\SpawnTower.cs" Line="22" Column="4" />
-      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="5" Column="37" />
+      <File FileName="Assets\Scrpts\Controls\Tower.cs" Line="20" Column="35" />
+      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="6" Column="19" />
+      <File FileName="Assets\Scrpts\Controls\SpawnTower.cs" Line="11" Column="54" />
+      <File FileName="Assets\Scrpts\Controls\SelectTower.cs" Line="14" Column="36" />
+      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="6" Column="21" />
+      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="8" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
