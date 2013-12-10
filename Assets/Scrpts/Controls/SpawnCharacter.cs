@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpawnTower : MonoBehaviour {
-	bool towerExists = false;
+public class SpawnCharacter : MonoBehaviour {
+	bool charExists = false;
 
 	void OnMouseDown () {
-		if (!towerExists) {
-			switch (GlobalStatics.selectedTower) {
-			case 1:
+		if (!charExists) {
+			switch (GlobalStatics.chars) {
+			case GlobalStatics.Characters.enemyFast:
 				GameObject tower1 = Instantiate(Resources.Load<GameObject>("Towers/Tower1"), transform.position, Quaternion.identity) as GameObject;
 				tower1.name = "Tower1";
 				break;
 
-			case 2:
+			case GlobalStatics.Characters.enemyStronk:
 				GameObject tower2 = Instantiate(Resources.Load<GameObject>("Towers/Tower2"), transform.position, Quaternion.identity) as GameObject;
 				tower2.name = "Tower2";
 				break;
 			}
 
-			towerExists = true;
+			charExists = true;
 		}
 	}
 }
