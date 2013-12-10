@@ -8,13 +8,13 @@ public class SpawnCharacter : MonoBehaviour {
 		if (!charExists) {
 			switch (GlobalStatics.chars) {
 			case GlobalStatics.Characters.enemyFast:
-				GameObject tower1 = Instantiate(Resources.Load<GameObject>("Towers/Tower1"), transform.position, Quaternion.identity) as GameObject;
-				tower1.name = "Tower1";
+				GameObject enemy1 = Instantiate(Resources.Load<GameObject>("Enemies/Enemy1"), transform.position, Quaternion.identity) as GameObject;
+				enemy1.name = "Enemy1";
 				break;
 
 			case GlobalStatics.Characters.enemyStronk:
-				GameObject tower2 = Instantiate(Resources.Load<GameObject>("Towers/Tower2"), transform.position, Quaternion.identity) as GameObject;
-				tower2.name = "Tower2";
+				GameObject enemy2 = Instantiate(Resources.Load<GameObject>("Enemies/Enemy2"), transform.position, Quaternion.identity) as GameObject;
+				enemy2.name = "Enemy2";
 				break;
 			}
 

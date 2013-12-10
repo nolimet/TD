@@ -30,6 +30,6 @@ public class Tower : MonoBehaviour {
 	}
 
 	protected void Shoot () {
-		Rigidbody spawnBullet = Instantiate(Resources.Load<GameObject>("Bullets/Bullets1"), transform.position, Quaternion.identity) as Rigidbody;
+		Instantiate(Resources.Load<GameObject>("Bullets/Bullets1"), transform.position, Quaternion.identity);
 	}
 }
