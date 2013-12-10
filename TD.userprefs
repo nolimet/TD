@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Controls\SpawnCharacter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Towers\Tower1.cs">
     <Files>
-      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="5" Column="8" />
-      <File FileName="Assets\Scrpts\Controls\SpawnCharacter.cs" Line="21" Column="8" />
+      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="18" Column="56" />
+      <File FileName="Assets\Scrpts\Controls\SpawnCharacter.cs" Line="17" Column="28" />
+      <File FileName="Assets\Scrpts\Controls\SelectCharacter.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="32" Column="27" />
+      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="30" Column="17" />
+      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="18" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
