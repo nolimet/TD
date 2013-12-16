@@ -5,46 +5,58 @@ using Pathfinding;
 public class Enemie : MonoBehaviour {
 
 	public Transform target;
-	public float Speed;
+	private Vector3 targetPos;
+	public float speed = 1;
 	public float margenPath;
-	Seeker seeker;
-	Path path;
-	CharacterController CharControler;
-	int currentWaypoint;
+	 Seeker seeker;
+	 Path path;
+
+	 int currentWaypoint;
+	public float nextWaypointDistance = 3;
 
 
 	// Use this for initialization
 	void Start () {
 		seeker = GetComponent<Seeker>();
 		seeker.StartPath(transform.position,target.position,OnPathComplete);
-		CharControler = GetComponent<CharacterController>();
+		//Debug.Log("test");
 	}
 
 	public void OnPathComplete (Path p){
+		Debug.Log ("mathComplete");
 		if(!p.error){
 			path = p;
 			currentWaypoint=0;
 		}else{
-			Debug.LogError(p.error);
+			Debug.LogError("NO VALID PATH CAN BEFOUND");
 		}
 	}
-	// Update is called once per frame
+
 	void FixedUpdate () {
+		if(targetPos!=target.position)
+		{
+			targetPos=target.position;
+		}
+
 		if(path == null){
 			return;
 		}
 
-		if(currentWaypoint>= path.vectorPath.Count);
-		{
+		if (currentWaypoint >= path.vectorPath.Count) {
+			Debug.Log ("End Of Path Reached");
 			return;
 		}
 
-		Vector3 dir = (path.vectorPath[currentWaypoint]-transform.position).normalized * Speed;
-		CharControler.SimpleMove(dir);
+
+		Vector3 dir = (path.vectorPath[currentWaypoint]-transform.position).normalized * speed;
 		if(Vector3.Distance(transform.position,path.vectorPath[currentWaypoint])<margenPath){
 		currentWaypoint++;
 		}
+
+		transform.LookAt(path.vectorPath[currentWaypoint]);
+		transform.Translate(Vector3.forward*speed*Time.fixedDeltaTime);
 	}
+
 
 	void OnTriggerEnter(Collider other){
 
