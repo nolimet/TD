@@ -1,0 +1,19 @@
+Must:
+	Shooting tower
+	Playermoving
+	StaticPathfinding
+
+Could:
+	Traps
+	Dynamic Pathfinding	
+
+
+should:
+	Menu's
+	Options
+	Music
+	SFX
+
+
+would not:
+	
