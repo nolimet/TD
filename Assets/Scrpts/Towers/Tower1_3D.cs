@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tower1 : Tower {
+public class Tower1_3D : Tower_3D{
 	private float time = 0;
 	private float fireRate = 1;
 
