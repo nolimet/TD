@@ -2,10 +2,16 @@ Must:
 	Shooting tower
 	Playermoving
 	StaticPathfinding
+	StaticTarget
+	2 Players
 
 Could:
-	Traps
+	Traps:
+		Fan
+		
 	Dynamic Pathfinding	
+	WORKING WALLS
+	moving target
 
 
 should:
