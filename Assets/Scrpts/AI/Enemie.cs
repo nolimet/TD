@@ -1,28 +1,64 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Pathfinding;
 
 public class Enemie : MonoBehaviour {
-	private GameObject currentWayPoint;
+
+	public Transform target;
+	private Vector3 targetPos;
+	public float speed = 1;
+	public float margenPath;
+	 Seeker seeker;
+	 Path path;
+
+	 int currentWaypoint;
+	public float nextWaypointDistance = 3;
+
+
 	// Use this for initialization
 	void Start () {
-	
+		seeker = GetComponent<Seeker>();
+		seeker.StartPath(transform.position,target.position,OnPathComplete);
+		//Debug.Log("test");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(currentWayPoint!=null){
-		WayPoint w = currentWayPoint.GetComponent<WayPoint>();
-			transform.rotation = w.direction;
-			transform.localPosition+=new Vector3(1,0);
+
+	public void OnPathComplete (Path p){
+		Debug.Log ("mathComplete");
+		if(!p.error){
+			path = p;
+			currentWaypoint=0;
+		}else{
+			Debug.LogError("NO VALID PATH CAN BEFOUND");
 		}
 	}
 
-	void OnTriggerEnter(Collider other){
-		if(other.gameObject.tag=="Waypoint"){
-			if(currentWayPoint!=other.gameObject)
-			{
-				currentWayPoint = other.gameObject;
-			}
+	void FixedUpdate () {
+		if(targetPos!=target.position)
+		{
+			targetPos=target.position;
 		}
+
+		if(path == null){
+			return;
+		}
+
+		if (currentWaypoint >= path.vectorPath.Count) {
+			Debug.Log ("End Of Path Reached");
+			return;
+		}
+
+
+		Vector3 dir = (path.vectorPath[currentWaypoint]-transform.position).normalized * speed;
+		if(Vector3.Distance(transform.position,path.vectorPath[currentWaypoint])<margenPath){
+		currentWaypoint++;
+		}
+
+		transform.LookAt(path.vectorPath[currentWaypoint]);
+		transform.Translate(Vector3.forward*speed*Time.fixedDeltaTime);
+	}
+
+
+	void OnTriggerEnter(Collider other){
+
 	}
 }
