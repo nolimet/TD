@@ -10,6 +10,8 @@ public class GlobalStatics : MonoBehaviour {
 	public const string bulletTag = "Bullet";
 	public const string playerTag = "Player";
 
+	public static int currentChar = 0;
+
 	//Character select
 	public enum Characters {
 		enemyFast,
