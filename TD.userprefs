@@ -1,19 +1,8 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Bullets\Bullet1.cs">
     <Files>
-      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="34" Column="5" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Towers\Tower1_3D.cs">
-    <Files>
-      <File FileName="Assets\Scrpts\AI\Enemie.cs" Line="56" Column="54" />
-      <File FileName="Assets\Scrpts\Towers\Tower1_3D.cs" Line="4" Column="34" />
-      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="11" Column="43" />
-      <File FileName="Assets\Scrpts\Towers\Tower_3D.cs" Line="5" Column="22" />
->>>>>>> b934e13f09129982543c1f3665af8d3005320556
+      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="9" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
