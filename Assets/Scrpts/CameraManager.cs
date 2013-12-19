@@ -24,7 +24,7 @@ public class CameraManager : MonoBehaviour {
 			}
 
 			Vector3 temp = Targets[GlobalStatics.currentChar].position;
-			temp.z = -10;
+			temp.z = transform.position.z;
 
 			if(Vector3.Distance(transform.position,temp)>=accurcy){
 				Vector3 dir = Targets[GlobalStatics.currentChar].position - transform.position;
