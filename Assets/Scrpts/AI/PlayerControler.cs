@@ -26,7 +26,6 @@ public class PlayerControler : MonoBehaviour {
 	
 	void Update ()
 	{
-
 		if (!paused) {
 			if(PlayerNumb==GlobalStatics.currentChar){
 				float hori = Input.GetAxis("Horizontal");
