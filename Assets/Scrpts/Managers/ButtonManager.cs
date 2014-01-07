@@ -8,14 +8,16 @@ public class ButtonManager:MonoBehaviour {
 
 	public bool hasRenderer;
 
-	private Color newColor;
+	public Color newColor;
 	private Color originalColor;
 
 	private Vector3 orignalPos;
 
 	void Start(){
 		if(hasRenderer){
+			if(newColor==null){
 			newColor = new Color(0.9f, 0.4f, 0.9f);
+			}
 			originalColor = gameObject.renderer.material.color;
 			orignalPos = transform.position;
 		}
