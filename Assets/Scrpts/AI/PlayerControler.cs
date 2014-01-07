@@ -26,6 +26,7 @@ public class PlayerControler : MonoBehaviour {
 	
 	void Update ()
 	{
+
 		if (!paused) {
 			if(PlayerNumb==GlobalStatics.currentChar){
 				float hori = Input.GetAxis("Horizontal");
@@ -35,6 +36,9 @@ public class PlayerControler : MonoBehaviour {
 				{
 					transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(vert, hori) * Mathf.Rad2Deg + 90));
 					rigidbody2D.AddForce(new Vector2(hori*speed,vert*speed));
+				}
+				else{
+					rigidbody2D.velocity=new Vector2();
 				}
 			}
 		}
