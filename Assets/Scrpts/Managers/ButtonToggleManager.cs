@@ -7,7 +7,7 @@ public class ButtonToggleManager:MonoBehaviour {
 	
 	public bool hasRenderer;
 	
-	private Color newColor;
+	public Color newColor = new Color(0.9f, 0.4f, 0.9f);
 	private Color originalColor;
 
 	private Vector3 orignalPos;

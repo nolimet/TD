@@ -3,27 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Tower_3D : MonoBehaviour {
-	protected GameObject enemy;
-	List<GameObject> enemiesInRange = new List<GameObject>();
+	protected Transform target;
+	List<Transform> targetsInRange = new List<Transform>();
 
 	void OnTriggerEnter (Collider col) {
-		if (col.tag == GlobalStatics.playerTag) {
+		Debug.Log ("triggerEntered");
+		if (col.gameObject.tag == GlobalStatics.playerTag) {
 			Debug.Log("TargetFound");
-			enemiesInRange.Add(col.gameObject);
-			enemy = enemiesInRange[0];
+			targetsInRange.Add(col.gameObject.transform);
+			target = targetsInRange[0];
 		}
 	}
 
 	void OnTriggerExit (Collider col) {
-		if (col.tag == GlobalStatics.playerTag) {
-			if (enemiesInRange.Contains(col.gameObject)) {
-				enemiesInRange.Remove(col.gameObject);
-				if (col.gameObject == enemy) {
-					if (enemiesInRange.Count >= 1) {
-						enemy = enemiesInRange[0];
+		if (col.gameObject.tag == GlobalStatics.playerTag) {
+			if (targetsInRange.Contains(col.gameObject.transform)) {
+				targetsInRange.Remove(col.gameObject.transform);
+				if (col.gameObject.transform == target) {
+					if (targetsInRange.Count >= 1) {
+						target = targetsInRange[0];
 					} else {
-						enemy = null;
-						enemiesInRange.Remove(col.gameObject);
+						target = null;
+						targetsInRange.Remove(col.gameObject.transform);
 					}
 				}
 			}
