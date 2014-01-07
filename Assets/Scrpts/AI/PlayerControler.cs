@@ -39,7 +39,19 @@ public class PlayerControler : MonoBehaviour {
 				else{
 					rigidbody2D.velocity=new Vector2();
 				}
+			}else{
+				rigidbody2D.velocity=new Vector2();
 			}
+		}else
+		{
+			rigidbody2D.velocity=new Vector2();
+		}
+	}
+
+	void OntriggerEnter(Collider other){
+		switch(other.gameObject.name){
+		case "fan":
+			break;
 		}
 	}
 }
