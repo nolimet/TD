@@ -18,20 +18,29 @@ public class GameManager : MonoBehaviour {
 
 	void Update () {
 		if(paused){
-			//menuGUI.SetActive(true);
-		}else{
-			//menuGUI.SetActive(false);
+			menuGUI.SetActive(true);
+		}
+		else{
+			menuGUI.SetActive(false);
 		}
 		Debug.Log ("paused: "+paused);
 
 		if(Input.GetKeyDown(KeyCode.Escape)){
 			//openPauseMenu Later on
-			Application.LoadLevel(0);
+			//Application.LoadLevel(0);
 			//Continue button does not work
-			//Object[] objects = FindObjectsOfType (typeof(GameObject));
-			//foreach (GameObject go in objects) {
-				//go.SendMessage ("OnPauseGame", SendMessageOptions.DontRequireReceiver);
-			//}
+			if(paused){
+				Object[] objects = FindObjectsOfType (typeof(GameObject));
+				foreach (GameObject go in objects) {
+					go.SendMessage ("OnResumeGame", SendMessageOptions.DontRequireReceiver);
+				}
+			}
+			else{
+				Object[] objects = FindObjectsOfType (typeof(GameObject));
+				foreach (GameObject go in objects) {
+					go.SendMessage ("OnPauseGame", SendMessageOptions.DontRequireReceiver);
+				};
+			}
 		}
 	}
 }
