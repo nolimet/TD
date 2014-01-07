@@ -20,7 +20,7 @@ public class Bullet1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		enemy = GameObject.FindWithTag(GlobalStatics.enemyTag);
+		enemy = GameObject.FindWithTag(GlobalStatics.playerTag);
 	}
 
 	// Update is called once per frame
@@ -46,7 +46,7 @@ public class Bullet1 : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if (col.tag == GlobalStatics.enemyTag) {
+		if (col.tag == GlobalStatics.playerTag) {
 			Destroy(gameObject);
 		}
 	}
