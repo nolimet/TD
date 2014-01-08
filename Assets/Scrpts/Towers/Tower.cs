@@ -6,14 +6,14 @@ public class Tower : MonoBehaviour {
 	protected Transform enemy;
 	List<Transform> enemiesInRange = new List<Transform>();
 
-	void OnTriggerEnter (Collider col) {
+	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
 			enemiesInRange.Add(col.gameObject.transform);
 			enemy = enemiesInRange[0];
 		}
 	}
 
-	void OnTriggerExit (Collider col) {
+	void OnTriggerExit2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
 			if (enemiesInRange.Contains(col.gameObject.transform)) {
 				enemiesInRange.Remove(col.gameObject.transform);
