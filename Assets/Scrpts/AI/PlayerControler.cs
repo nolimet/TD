@@ -7,7 +7,7 @@ public class PlayerControler : MonoBehaviour {
 	public float speed;
 	public int PlayerNumb;
 	public float rotationSpeed = 3f;
-	public bool isSmall;
+	public bool isSmall = true;
 
 
 	// Use this for initialization
@@ -50,11 +50,14 @@ public class PlayerControler : MonoBehaviour {
 		}
 	}
 
-	void OntriggerEnter(Collider other){
+	void OnTriggerEnter2D(Collider2D other){
+		Debug.Log ("triggered");
 		if(isSmall){
-			switch(other.gameObject.name){
+			switch(other.name){
 			case "fan":
-				//rigidbody2D.AddForce
+				Debug.Log ("hitFan");
+				AddForce force = other.gameObject.GetComponent<AddForce>();
+				rigidbody2D.AddForce(force.force);
 				break;
 			case "dig":
 				//set texture to dig texture

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
 		else{
 			menuGUI.SetActive(false);
 		}
-		Debug.Log ("paused: "+paused);
+		//Debug.Log ("paused: "+paused);
 
 		if(Input.GetKeyDown(KeyCode.Escape)){
 			//openPauseMenu Later on

@@ -1,20 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\AI\PlayerControler.cs">
     <Files>
-      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="7" Column="1" />
-      <File FileName="Assets\Scrpts\GUI\ContinueButton.cs" Line="8" Column="4" />
-      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="21" Column="3" />
-      <File FileName="Assets\Scrpts\Controls\SelectCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Managers\CameraManager.cs" Line="12" Column="2" />
-=======
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Bullets\Bullet1.cs">
-    <Files>
-      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="1" Column="1" />
->>>>>>> c489b2a040937ac651d85bb392b3619dd3561380
+      <File FileName="Assets\Scrpts\Controls\AddForce.cs" Line="2" Column="26" />
+      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="55" Column="10" />
+      <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="24" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

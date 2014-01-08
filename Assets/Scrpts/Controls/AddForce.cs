@@ -3,5 +3,5 @@ using System.Collections;
 
 public class AddForce : MonoBehaviour {
 
-	public int force;
+	public Vector2 force;
 }
