@@ -139,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20619328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.61398697, y: 10.4390001, z: .965087891}
+  m_LocalPosition: {x: -8.99527931, y: 9.73779869, z: .965087891}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -538,7 +538,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960360753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.09043789, y: -4.00885963, z: 0}
+  m_LocalPosition: {x: -3.60686469, y: -2.43969822, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -771,7 +771,7 @@ MonoBehaviour:
   speed: 8
   PlayerNumb: 1
   rotationSpeed: 3
-  isSmall: 0
+  isSmall: 1
 --- !u!212 &1040006621
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -945,6 +945,44 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.90758848, y: -4.1988287, z: 0}
   m_LocalScale: {x: 8.27821445, y: 1.10809398, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1330023539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1330023541}
+  - 61: {fileID: 1330023540}
+  m_Layer: 0
+  m_Name: dig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1330023540
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1330023539}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 3.8499999, y: 3.68000007}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &1330023541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1330023539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.33340263, y: 2.90921235, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1001 &1332103351
