@@ -1,14 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Managers\CameraManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\AI\PlayerControler.cs">
     <Files>
       <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="14" Column="5" />
-      <File FileName="Assets\Scrpts\Managers\ButtonManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\GlobalStatics.cs" Line="18" Column="14" />
-      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="43" Column="5" />
-      <File FileName="Assets\Scrpts\Managers\CameraManager.cs" Line="30" Column="48" />
+      <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scrpts\GUI\ContinueButton.cs" Line="8" Column="4" />
+      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="21" Column="3" />
+      <File FileName="Assets\Scrpts\Controls\SelectCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scrpts\Managers\CameraManager.cs" Line="12" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
