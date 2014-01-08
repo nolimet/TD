@@ -45,7 +45,7 @@ public class Bullet1 : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter (Collider col) {
+	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
 			Destroy(gameObject);
 		}
