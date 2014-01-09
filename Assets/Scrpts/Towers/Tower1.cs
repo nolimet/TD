@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Tower1 : Tower {
+
 	private float time = 0;
 	private float fireRate = 1;
 
