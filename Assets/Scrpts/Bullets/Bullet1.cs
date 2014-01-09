@@ -7,7 +7,7 @@ public class Bullet1 : MonoBehaviour {
 
 	//integers
 	private int lifeTime = 5;
-	private int bulletSpeed = 400;
+	private float bulletSpeed = 5;
 
 	//floats
 	private float deathTimer;
@@ -30,6 +30,7 @@ public class Bullet1 : MonoBehaviour {
 
 	void FixedUpdate () {
 		if(enemy!=null){
+			Debug.Log (enemy.position);
 			xDiff = transform.position.x - enemy.position.x;
 			yDiff = transform.position.y - enemy.position.y;
 			
@@ -38,12 +39,17 @@ public class Bullet1 : MonoBehaviour {
 
 			transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
 
-			rigidbody2D.velocity = Vector3.zero;
+			Vector2 move = new Vector2();
+
+			move.x = Mathf.Cos(transform.rotation.x / 180 * Mathf.PI) * bulletSpeed;
+			move.y = Mathf.Sin(transform.rotation.x / 180 * Mathf.PI) * bulletSpeed;
+			
+			rigidbody2D.velocity = move;
 			//rigidbody2D.AddRelativeForce(-bulletSpeed, 0);
 			//rigidbody2D.angularVelocity=1f;
 
 
-			transform.localScale = - transform.localScale;
+			//transform.localScale = - transform.localScale;
 
 			deathTimer += 10 * Time.deltaTime;
 

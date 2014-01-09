@@ -33,6 +33,6 @@ public class Tower : MonoBehaviour {
 	protected void Shoot () {
 		GameObject bullet = Instantiate(Resources.Load<GameObject>("Bullets/Bullets1"), transform.position, Quaternion.identity) as GameObject;
 		Bullet1 bulletScript = bullet.GetComponent<Bullet1>();
-		bulletScript.getTarget(enemy);
+		bulletScript.getTarget(enemiesInRange[0]);
 	}
 }
