@@ -30,9 +30,8 @@ public class Bullet1 : MonoBehaviour {
 
 	void FixedUpdate () {
 		if(enemy!=null){
-			Debug.Log (enemy.position);
-			xDiff = transform.position.x - enemy.position.x;
-			yDiff = transform.position.y - enemy.position.y;
+			xDiff = enemy.position.x - transform.position.x; 
+			yDiff = enemy.position.y - transform.position.y;
 			
 			radians = Mathf.Atan2(yDiff, xDiff);
 			degrees = (radians * 180) / Mathf.PI;
@@ -41,14 +40,10 @@ public class Bullet1 : MonoBehaviour {
 
 			Vector2 move = new Vector2();
 
-			move.x = Mathf.Cos(transform.rotation.x / 180 * Mathf.PI) * bulletSpeed;
-			move.y = Mathf.Sin(transform.rotation.x / 180 * Mathf.PI) * bulletSpeed;
+			move.x = Mathf.Cos(transform.rotation.z * Mathf.PI) * bulletSpeed;
+			move.y = Mathf.Sin(transform.rotation.z * Mathf.PI) * bulletSpeed;
 			
 			rigidbody2D.velocity = move;
-			//rigidbody2D.AddRelativeForce(-bulletSpeed, 0);
-			//rigidbody2D.angularVelocity=1f;
-
-
 			//transform.localScale = - transform.localScale;
 
 			deathTimer += 10 * Time.deltaTime;

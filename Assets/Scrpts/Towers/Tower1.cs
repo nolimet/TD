@@ -16,10 +16,10 @@ public class Tower1 : Tower {
 
 	// Update is called once per frame
 	void Update () {
-		if (enemy) {
+		if (enemiesInRange.Count>0) {
 			//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
-			xDiff = transform.position.x - enemy.transform.position.x;
-			yDiff = transform.position.y - enemy.transform.position.y;
+			xDiff = enemy.position.x - transform.position.x; 
+			yDiff = enemy.position.y - transform.position.y;
 			
 			radians = Mathf.Atan2(yDiff, xDiff);
 			degrees = (radians * 180) / Mathf.PI;

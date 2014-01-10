@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Tower : MonoBehaviour {
 	protected Transform enemy;
-	List<Transform> enemiesInRange = new List<Transform>();
+	protected List<Transform> enemiesInRange = new List<Transform>();
 
 	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
