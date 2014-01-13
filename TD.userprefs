@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Bullets\Bullet1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Controls\SelectCharacter.cs">
     <Files>
-      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="38" Column="19" />
-      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="18" Column="18" />
-      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="7" Column="12" />
+      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="33" Column="5" />
+      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="30" Column="2" />
+      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="6" Column="28" />
+      <File FileName="Assets\Scrpts\Controls\SelectCharacter.cs" Line="17" Column="1" />
+      <File FileName="Assets\Scrpts\Towers\FanControler.cs" Line="7" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

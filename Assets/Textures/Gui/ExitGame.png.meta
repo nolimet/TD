@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b58522ace6b6a946a164a7457bdd269
+guid: 33066182890983a40b3296625f61ce88
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -35,19 +35,19 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: turrets_2testnobase_0
+    - name: ExitGame_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 8
-        width: 68
-        height: 86
+        x: 99
+        y: 0
+        width: 295
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
