@@ -10,7 +10,7 @@ public class Bullet1 : MonoBehaviour {
 
 	//floats
 	private float deathTimer;
-	private float bulletSpeed = 0f;
+	private float bulletSpeed = 5f;
 	//private float xDiff;
 	//private float yDiff;
 	
