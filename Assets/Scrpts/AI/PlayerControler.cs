@@ -9,12 +9,6 @@ public class PlayerControler : MonoBehaviour {
 	public float rotationSpeed = 3f;
 	public bool isSmall = true;
 
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-
 	void OnPauseGame ()
 	{
 		paused = true;
@@ -51,11 +45,11 @@ public class PlayerControler : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("triggered");
+		//Debug.Log ("triggered");
 		if(isSmall){
 			switch(other.name){
 			case "fan":
-				Debug.Log ("hitFan");
+				//Debug.Log ("hitFan");
 				AddForce force = other.gameObject.GetComponent<AddForce>();
 				rigidbody2D.AddForce(force.force);
 				break;

@@ -10,11 +10,11 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
-  - 58: {fileID: 5800000}
   - 50: {fileID: 5000000}
+  - 60: {fileID: 6000000}
   m_Layer: 0
-  m_Name: Tower1
-  m_TagString: Untagged
+  m_Name: playerFast
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,17 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 2.09023428, y: 3.40954161, z: 0}
-=======
-  m_LocalPosition: {x: 2.12691593, y: 3.40954161, z: 0}
->>>>>>> 3ce58116bdb11ff136451d344edfca5c945ce83c
-=======
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: 4.33522415, y: 1.00493336, z: 0}
->>>>>>> 0472ac14ca4f3566ec48291cc5dd3e585566423a
+  m_LocalPosition: {x: 1.08871412, y: 3.24620318, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,8 +36,8 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 2
+  m_LinearDrag: 3
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
@@ -54,17 +45,34 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5800000
-CircleCollider2D:
+--- !u!60 &6000000
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Radius: 2.8599999
-  m_Center: {x: 0, y: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .5, y: .100000009}
+      - {x: .5, y: .166666672}
+      - {x: .483333349, y: .183333337}
+      - {x: .0833333358, y: .150000006}
+      - {x: .166666672, y: .466666698}
+      - {x: .13333334, y: .5}
+      - {x: -.0333333351, y: .5}
+      - {x: -.150000006, y: .116666675}
+      - {x: -.283333361, y: .183333337}
+      - {x: -.5, y: .183333337}
+      - {x: -.5, y: .100000009}
+      - {x: -.450000018, y: -.383333355}
+      - {x: -.13333334, y: -.5}
+      - {x: .216666684, y: -.5}
+      - {x: .5, y: -.383333355}
+      - {x: .5, y: -.333333343}
+      - {x: .433333367, y: -.0500000045}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,10 +81,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0dbdc0375437847b5c9752da6cf670, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f1f85719fbc496489c0e9e184a68900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetRot: -90
+  speed: 8
+  PlayerNumb: 1
+  rotationSpeed: 3
+  isSmall: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,7 +100,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8c0f724e8945a64428e154f99be0e3a0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -98,7 +109,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d680ebdcf7d37348800094028b76452, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
