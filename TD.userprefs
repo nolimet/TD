@@ -1,21 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Managers\GameManager.cs">
-    <Files>
-      <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="24" Column="1" />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\Bullets\Bullet1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrpts\AI\PlayerControler.cs">
     <Files>
       <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Controls\AddForce.cs" Line="8" Column="1" />
-      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="69" Column="3" />
       <File FileName="Assets\Scrpts\Managers\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrpts\Bullets\Bullet1.cs" Line="52" Column="6" />
-      <File FileName="Assets\Scrpts\Towers\Tower.cs" Line="36" Column="43" />
-      <File FileName="Assets\Scrpts\Towers\Tower1.cs" Line="4" Column="30" />
->>>>>>> 3ce58116bdb11ff136451d344edfca5c945ce83c
+      <File FileName="Assets\Scrpts\AI\PlayerControler.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
