@@ -10,7 +10,7 @@ public class Tower : MonoBehaviour {
 		if (col.tag == GlobalStatics.playerTag) {
 			enemiesInRange.Add(col.gameObject.transform);
 			enemy = enemiesInRange[0];
-			Debug.Log (enemiesInRange);
+			//Debug.Log (enemiesInRange);
 		}
 	}
 

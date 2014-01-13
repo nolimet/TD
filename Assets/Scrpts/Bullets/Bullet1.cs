@@ -10,15 +10,14 @@ public class Bullet1 : MonoBehaviour {
 
 	//floats
 	private float deathTimer;
-	private float bulletSpeed = 5f;
-	private float xDiff;
-	private float yDiff;
+	private float bulletSpeed = 0f;
+	//private float xDiff;
+	//private float yDiff;
 	
-	private float radians;
-	private float degrees;
+	//private float radians;
+	//private float degrees;
 
-	private Vector2 targetPoss = new Vector3();
-	private Vector2 move = new Vector2();
+	private Vector2 targetPoss = new Vector2();
 
 	private bool paused = false;
 
@@ -50,14 +49,16 @@ public class Bullet1 : MonoBehaviour {
 		if(!paused){
 			if(enemy!=null){
 
-				xDiff = targetPoss.x - transform.position.x; 
-				yDiff = targetPoss.y - transform.position.y;
+				float xDiff = targetPoss.x - transform.position.x; 
+				float yDiff = targetPoss.y - transform.position.y;
 				
-				radians = Mathf.Atan2(yDiff, xDiff);
-				degrees = (radians * 180) / Mathf.PI;
-				
+				float radians = Mathf.Atan2(yDiff, xDiff);
+				float degrees = (radians * 180) / Mathf.PI;
+
 				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
-				
+
+				Vector2 move = new Vector2();
+
 				move.x = Mathf.Cos(transform.rotation.z * Mathf.PI) * bulletSpeed;
 				move.y = Mathf.Sin(transform.rotation.z * Mathf.PI) * bulletSpeed;
 

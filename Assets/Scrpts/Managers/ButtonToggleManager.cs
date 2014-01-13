@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ButtonToggleManager:MonoBehaviour {
 	public int id;
-	public bool enabled;
+	public bool Soundenabled;
 	
 	public bool hasRenderer;
 	
