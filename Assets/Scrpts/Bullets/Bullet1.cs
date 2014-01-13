@@ -13,21 +13,18 @@ public class Bullet1 : MonoBehaviour {
 	private float bulletSpeed = 5f;
 	//private float xDiff;
 	//private float yDiff;
-	
+	private float offsetRot=0f;
 	//private float radians;
 	//private float degrees;
 
-	private Vector2 targetPoss = new Vector2();
-
+	//other
+	//private Vector2 targetPoss = new Vector2();
 	private bool paused = false;
 
 	// Use this for initialization
 	void Start () {
 		//enemy = GameObject.FindWithTag(GlobalStatics.playerTag);
 		name = "Bullet";
-		if(enemy!=null){
-			targetPoss = enemy.transform.position;
-		}
 	}
 
 	void OnPauseGame ()
@@ -49,18 +46,22 @@ public class Bullet1 : MonoBehaviour {
 		if(!paused){
 			if(enemy!=null){
 
-				float xDiff = targetPoss.x - transform.position.x; 
-				float yDiff = targetPoss.y - transform.position.y;
+				float xDiff = enemy.position.x - transform.position.x; 
+				float yDiff = enemy.position.y - transform.position.y;
 				
 				float radians = Mathf.Atan2(yDiff, xDiff);
-				float degrees = (radians * 180) / Mathf.PI;
-
+				float degrees = ((radians * 180) / Mathf.PI)+offsetRot;
+				
 				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
+
 
 				Vector2 move = new Vector2();
 
-				move.x = Mathf.Cos(transform.rotation.z * Mathf.PI) * bulletSpeed;
-				move.y = Mathf.Sin(transform.rotation.z * Mathf.PI) * bulletSpeed;
+				//move.x = Mathf.Cos(transform.rotation.z * Mathf.PI) * bulletSpeed;
+				//move.y = Mathf.Sin(transform.rotation.z * Mathf.PI) * bulletSpeed;
+
+				move.x = Mathf.Cos(degrees/180*Mathf.PI) * bulletSpeed;
+				move.y = Mathf.Sin(degrees/180*Mathf.PI) * bulletSpeed;
 
 				rigidbody2D.velocity = move;
 
@@ -73,6 +74,9 @@ public class Bullet1 : MonoBehaviour {
 			else{
 				DestroyImmediate(this);
 			}
+		}else
+		{
+			rigidbody2D.velocity=new Vector2();
 		}
 	}
 
