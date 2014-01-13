@@ -8,9 +8,9 @@ public class Tower : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
+			enemy = col.gameObject.transform;
 			enemiesInRange.Add(col.gameObject.transform);
-			enemy = enemiesInRange[0];
-			//Debug.Log (enemiesInRange);
+			Debug.Log(enemiesInRange.Count);
 		}
 	}
 
@@ -22,6 +22,7 @@ public class Tower : MonoBehaviour {
 					if (enemiesInRange.Count >= 1) {
 						enemy = enemiesInRange[0];
 					} else {
+						Debug.Log("testing");
 						enemy = null;
 						enemiesInRange.Remove(col.gameObject.transform);
 					}
@@ -29,6 +30,21 @@ public class Tower : MonoBehaviour {
 			}
 		}
 	}
+
+	/*void OnTriggerExit (Collider col) {
+		if (col.gameObject.tag == "Enemy") {
+			if (targetsInRange.Contains(col.gameObject.transform)) {
+				targetsInRange.Remove(col.gameObject.transform);
+				if (col.gameObject.transform == target) {
+					if (targetsInRange.Count >= 1) {
+						target = targetsInRange[0];
+					} else {
+						target = null;
+					}
+				}
+			}
+		}
+	}*/
 
 	protected void Shoot () {
 		GameObject bullet = Instantiate(Resources.Load<GameObject>("Bullets/Bullets1"), transform.position, Quaternion.identity) as GameObject;

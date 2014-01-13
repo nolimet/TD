@@ -28,7 +28,7 @@ public class Tower1 : Tower {
 
 	void Update () {
 		if(!paused){
-			if (enemiesInRange.Count>0) {
+			if (enemy) {
 				//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
 				xDiff = enemy.position.x - transform.position.x; 
 				yDiff = enemy.position.y - transform.position.y;
