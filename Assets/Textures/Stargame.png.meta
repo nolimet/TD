@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3d7a3328ff3c52438b807abe9a0e71f
+guid: 00718392ba2b09349bba6fa940dd32cd
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,12 +41,12 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: backtomenu_0
+    - name: Stargame_0
       rect:
         serializedVersion: 2
-        x: 59
+        x: 97
         y: 0
-        width: 408
+        width: 331
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
