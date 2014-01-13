@@ -2,13 +2,25 @@
 using System.Collections;
 
 public class SelectCharacter : MonoBehaviour {
+	private bool paused=false;
+
+	void OnPauseGame ()
+	{
+		paused = true;
+	}
 	
-	// Update is called once per frame
+	void OnResumeGame ()
+	{
+		paused = false;
+	}
+	
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			GlobalStatics.chars = GlobalStatics.Characters.enemyFast;
-		} else if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			GlobalStatics.chars = GlobalStatics.Characters.enemyStronk;
+		if(!paused){
+			if (Input.GetKeyDown(KeyCode.Alpha1)) {
+				GlobalStatics.chars = GlobalStatics.Characters.enemyFast;
+			} else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+				GlobalStatics.chars = GlobalStatics.Characters.enemyStronk;
+			}
 		}
 	}
 }
