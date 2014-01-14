@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerControler : MonoBehaviour {
@@ -8,6 +8,13 @@ public class PlayerControler : MonoBehaviour {
 	public int PlayerNumb;
 	public float rotationSpeed = 3f;
 	public bool isSmall = true;
+	private GameObject hitFan;
+	private enum statusenu{
+		Normal,
+		Fan,
+		Dig
+	}
+	private statusenu status = statusenu.Normal;
 
 	void OnPauseGame ()
 	{
@@ -31,12 +38,18 @@ public class PlayerControler : MonoBehaviour {
 					transform.rotation = Quaternion.Euler(new Vector3(0, 0, Mathf.Atan2(vert, hori) * Mathf.Rad2Deg + 90));
 					rigidbody2D.AddForce(new Vector2(hori*speed,vert*speed));
 				}
-				else{
+				else if(status==statusenu.Normal){
 					rigidbody2D.velocity=new Vector2();
 				}
 			}
-			else{
+			else if(status==statusenu.Normal){
 				rigidbody2D.velocity=new Vector2();
+			}
+			switch(status){
+			case statusenu.Dig:
+				AddForce force = hitFan.GetComponent<AddForce>();
+				rigidbody2D.AddForce(force.force);
+				break;
 			}
 		}
 		else{
@@ -49,14 +62,27 @@ public class PlayerControler : MonoBehaviour {
 		if(isSmall){
 			switch(other.name){
 			case "fan":
-				//Debug.Log ("hitFan");
-				AddForce force = other.gameObject.GetComponent<AddForce>();
-				rigidbody2D.AddForce(force.force);
+				hitFan = other.gameObject;
+				status = statusenu.Dig;
+				Debug.Log ("fan");
 				break;
 			case "dig":
-				//set texture to dig texture
+
 				break;
 			}
 		}
+	}
+	void OnTriggerExit2D(Collider2D other){
+		if(isSmall){
+			switch(other.name){
+			case "fan":
+				status=statusenu.Normal;
+				break;
+			case "dig":
+				
+				break;
+			}
+		}
+
 	}
 }

@@ -11,7 +11,7 @@ public class Tower : MonoBehaviour {
 
 			enemiesInRange.Add(col.gameObject.transform);
 			enemy = enemiesInRange[0];
-			Debug.Log(enemiesInRange.Count);
+			//Debug.Log(enemiesInRange.Count);
 		}
 	}
 
@@ -23,7 +23,7 @@ public class Tower : MonoBehaviour {
 					if (enemiesInRange.Count >= 1) {
 						enemy = enemiesInRange[0];
 					} else {
-						Debug.Log("testing");
+						//Debug.Log("testing");
 						enemy = null;
 						enemiesInRange.Remove(col.gameObject.transform);
 					}
