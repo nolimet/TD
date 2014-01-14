@@ -11,7 +11,7 @@ public class Tower1 : Tower {
 	
 	private float radians;
 	private float degrees;
-	public float offsetRot =0f;
+	public float offsetRot = 0f;
 
 	private Vector3 tempPos;
 	private bool paused = false;
@@ -27,7 +27,7 @@ public class Tower1 : Tower {
 	}
 
 	void Update () {
-		if(!paused){
+		if(!paused) {
 			if (enemy) {
 				//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
 				xDiff = enemy.position.x - transform.position.x; 

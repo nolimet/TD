@@ -4,12 +4,14 @@ using System.Collections;
 public class GlobalStatics : MonoBehaviour {
 	//Ints
 	public const int bulletSpeed = 20;
+	public static int currentChar = 0;
 
 	//Strings
 	public const string bulletTag = "Bullet";
 	public const string playerTag = "Player";
-
-	public static int currentChar = 0;
+	public const string fanTag = "Tag";
+	public const string dirtTag = "Dirt";
+	public const string diggingTag = "Digging";
 
 	//Character select
 	public enum Characters {

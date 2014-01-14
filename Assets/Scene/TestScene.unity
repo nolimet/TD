@@ -410,7 +410,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 469076991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0dbdc0375437847b5c9752da6cf670, type: 3}
+  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetRot: -90
@@ -435,7 +435,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1741,8 +1741,8 @@ GameObject:
   - 61: {fileID: 835372728}
   - 114: {fileID: 835372727}
   m_Layer: 0
-  m_Name: fan
-  m_TagString: Untagged
+  m_Name: Fan
+  m_TagString: Fan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
