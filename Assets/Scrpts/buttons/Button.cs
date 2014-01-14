@@ -29,8 +29,13 @@ public class Button : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D col) {
 		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
 			spriteRenderer.sprite=active;
+
 			AddForce conChange = Controling.GetComponent<AddForce>();
 			conChange.force=new Vector2();
+
+			Animator ani = Controling.GetComponent<Animator>();
+			ani.enabled=false;
+
 			particles.particleSystem.startLifetime=0;
 
 		}
@@ -41,6 +46,8 @@ public class Button : MonoBehaviour {
 			spriteRenderer.sprite=inactive;
 			AddForce conChange = Controling.GetComponent<AddForce>();
 			conChange.force=orginalForce;
+			Animator ani = Controling.GetComponent<Animator>();
+			ani.enabled=true;
 
 			particles.particleSystem.startLifetime=originalLifetime;
 		}

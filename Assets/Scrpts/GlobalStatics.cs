@@ -9,7 +9,7 @@ public class GlobalStatics : MonoBehaviour {
 	//Strings
 	public const string bulletTag = "Bullet";
 	public const string playerTag = "Player";
-	public const string fanTag = "Tag";
+	public const string fanTag = "Fan";
 	public const string dirtTag = "Dirt";
 	public const string diggingTag = "Digging";
 

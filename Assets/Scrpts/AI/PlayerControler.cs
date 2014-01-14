@@ -46,7 +46,7 @@ public class PlayerControler : MonoBehaviour {
 				rigidbody2D.velocity=new Vector2();
 			}
 			switch(status){
-			case statusenu.Dig:
+			case statusenu.Fan:
 				AddForce force = hitFan.GetComponent<AddForce>();
 				rigidbody2D.AddForce(force.force);
 				break;
@@ -63,11 +63,11 @@ public class PlayerControler : MonoBehaviour {
 			switch(other.tag){
 			case GlobalStatics.fanTag:
 				hitFan = other.gameObject;
-				status = statusenu.Dig;
-				Debug.Log ("fan");
+				status = statusenu.Fan;
+				//Debug.Log ("fan");
 				break;
 			case GlobalStatics.dirtTag:
-				Debug.Log(transform.tag);
+				//Debug.Log(transform.tag);
 				transform.tag = GlobalStatics.diggingTag;
 				break;
 			}
