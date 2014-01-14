@@ -5,7 +5,6 @@ public class FanControler : MonoBehaviour {
 
 	AddForce power;
 
-
 	// Use this for initialization
 	void Start () {
 	

@@ -3,10 +3,12 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - Enemy
+  - Digging
   - Bullet
   - Ground
   - Obstacle
+  - Dirt
+  - Fan
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

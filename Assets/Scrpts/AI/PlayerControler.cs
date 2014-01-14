@@ -60,26 +60,28 @@ public class PlayerControler : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		//Debug.Log ("triggered");
 		if(isSmall){
-			switch(other.name){
-			case "fan":
+			switch(other.tag){
+			case GlobalStatics.fanTag:
 				hitFan = other.gameObject;
 				status = statusenu.Dig;
 				Debug.Log ("fan");
 				break;
-			case "dig":
-
+			case GlobalStatics.dirtTag:
+				Debug.Log(transform.tag);
+				transform.tag = GlobalStatics.diggingTag;
 				break;
 			}
 		}
 	}
 	void OnTriggerExit2D(Collider2D other){
 		if(isSmall){
-			switch(other.name){
-			case "fan":
+			switch(other.tag){
+			case GlobalStatics.fanTag:
 				status=statusenu.Normal;
 				break;
-			case "dig":
-				
+			case GlobalStatics.dirtTag:
+				Debug.Log(transform.tag);
+				transform.tag = GlobalStatics.playerTag;
 				break;
 			}
 		}
