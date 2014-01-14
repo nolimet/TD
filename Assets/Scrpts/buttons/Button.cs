@@ -8,6 +8,8 @@ public class Button : MonoBehaviour {
 	public GameObject Controling;
 	public GameObject particles;
 
+	//setTos
+	public Vector2 setForceTo = new Vector2();
 	//orginal vars
 	private Vector2 orginalForce;
 	private float originalLifetime;
@@ -31,7 +33,7 @@ public class Button : MonoBehaviour {
 			spriteRenderer.sprite=active;
 
 			AddForce conChange = Controling.GetComponent<AddForce>();
-			conChange.force=new Vector2();
+			conChange.force=setForceTo;
 
 			Animator ani = Controling.GetComponent<Animator>();
 			ani.enabled=false;
