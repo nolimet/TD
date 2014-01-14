@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.07566643, y: 2.5740006, z: -.00100000005}
+  m_LocalPosition: {x: 8.35349941, y: -4.46168947, z: -.00100000005}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,7 +54,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .319999993
+  m_Radius: .100000001
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
