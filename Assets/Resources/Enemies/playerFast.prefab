@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
-  - 60: {fileID: 6000000}
+  - 58: {fileID: 5800000}
   m_Layer: 0
   m_Name: playerFast
   m_TagString: Player
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.36716413, y: -3.47850847, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,8 +45,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6000000
-PolygonCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -54,25 +54,8 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .5, y: .100000009}
-      - {x: .5, y: .166666672}
-      - {x: .483333349, y: .183333337}
-      - {x: .0833333358, y: .150000006}
-      - {x: .166666672, y: .466666698}
-      - {x: .13333334, y: .5}
-      - {x: -.0333333351, y: .5}
-      - {x: -.150000006, y: .116666675}
-      - {x: -.283333361, y: .183333337}
-      - {x: -.5, y: .183333337}
-      - {x: -.5, y: .100000009}
-      - {x: -.450000018, y: -.383333355}
-      - {x: -.13333334, y: -.5}
-      - {x: .216666684, y: -.5}
-      - {x: .5, y: -.383333355}
-      - {x: .5, y: -.333333343}
-      - {x: .433333367, y: -.0500000045}
+  m_Radius: .533333361
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1

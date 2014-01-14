@@ -7,5 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scene/MainMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/MockupScene.unity
+  - enabled: 1
+    path: Assets/Scene/Level1.unity
