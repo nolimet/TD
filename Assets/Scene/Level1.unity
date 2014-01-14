@@ -1398,44 +1398,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 93ec42d1b97ba0f48aa6aa7eb47647c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &193850288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 193850289}
-  - 58: {fileID: 193850290}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Dirt
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &193850289
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 193850288}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.525735378, y: -.19007349, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 929036733}
---- !u!58 &193850290
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 193850288}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Radius: 1
-  m_Center: {x: 0, y: 0}
 --- !u!1 &209317400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,44 +3105,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 93ec42d1b97ba0f48aa6aa7eb47647c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &506178997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 506178999}
-  - 58: {fileID: 506178998}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Dirt
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!58 &506178998
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506178997}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Radius: .699999988
-  m_Center: {x: 0, y: 0}
---- !u!4 &506178999
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506178997}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .756808043, y: .5592978, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 929036733}
 --- !u!1 &515208146
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,7 +4051,7 @@ Transform:
   m_PrefabInternal: {fileID: 2069849603}
   m_GameObject: {fileID: 671479471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.38337135, y: -4.27892017, z: 0}
+  m_LocalPosition: {x: -4.38337135, y: -4.26193714, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 767542639}
@@ -5899,13 +5823,29 @@ GameObject:
   m_Component:
   - 4: {fileID: 929036733}
   - 212: {fileID: 929036732}
+  - 114: {fileID: 929036731}
+  - 60: {fileID: 929036734}
   m_Layer: 0
   m_Name: Dirt
-  m_TagString: Dirt
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &929036731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929036730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf4bf623f134ce49b9eab14e8108386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trigger: {fileID: 671479471}
+  Controling: {fileID: 1467831375}
+  spActive: {fileID: 21300000, guid: 45b8cc10fb275424ead882a9e6e6dbb0, type: 3}
 --- !u!212 &929036732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5938,11 +5878,44 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.45074224, y: 3.83684182, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 193850289}
-  - {fileID: 506178999}
-  - {fileID: 1307110078}
+  m_Children: []
   m_Father: {fileID: 0}
+--- !u!60 &929036734
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929036730}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .149999991, y: -.854999959}
+      - {x: .310000002, y: -.604999959}
+      - {x: .439999998, y: -.435000002}
+      - {x: .569999993, y: -.305000007}
+      - {x: .719999969, y: -.224999994}
+      - {x: 1.07999992, y: -.0850000009}
+      - {x: 1.18999994, y: -.0149999997}
+      - {x: 1.27999997, y: .0549999997}
+      - {x: 1.36000001, y: .155000001}
+      - {x: 1.49000001, y: .354999989}
+      - {x: 1.51999998, y: .424999982}
+      - {x: 1.54999995, y: .824999988}
+      - {x: 1.61000001, y: 1.03499997}
+      - {x: 1.64999998, y: 1.17499995}
+      - {x: 1.64999998, y: 1.21499991}
+      - {x: -1.64999998, y: 1.21499991}
+      - {x: -1.64999998, y: -.844999969}
+      - {x: -1.45999992, y: -.854999959}
+      - {x: -1.19999993, y: -.984999955}
+      - {x: -1.07999992, y: -1.07499993}
+      - {x: -.789999962, y: -1.20499992}
+      - {x: -.719999969, y: -1.21499991}
+      - {x: -.280000001, y: -1.21499991}
+      - {x: -.0899999961, y: -1.11500001}
+      - {x: .0199999996, y: -1.005}
 --- !u!1 &934230170
 GameObject:
   m_ObjectHideFlags: 0
@@ -8142,44 +8115,6 @@ Prefab:
   m_RootGameObject: {fileID: 217809763}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1307110077
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1307110078}
-  - 61: {fileID: 1307110079}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Dirt
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1307110078
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307110077}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.56855917, y: .880988836, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 929036733}
---- !u!61 &1307110079
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1307110077}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.89999998, y: .519999981}
-  m_Center: {x: 0, y: 0}
 --- !u!1001 &1316156092
 Prefab:
   m_ObjectHideFlags: 0
@@ -9127,10 +9062,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1467831375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0dbdc0375437847b5c9752da6cf670, type: 3}
+  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetRot: -90
+  Actived: 1
 --- !u!212 &1467831379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10214,10 +10150,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613090203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0dbdc0375437847b5c9752da6cf670, type: 3}
+  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   offsetRot: -90
+  Actived: 1
 --- !u!212 &1613090208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12632,7 +12569,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 20f006de8b59d4d40869aa9c45b4ca1f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.27892017
+      value: -4.26193714
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 20f006de8b59d4d40869aa9c45b4ca1f, type: 2}
       propertyPath: m_LocalPosition.z
