@@ -32,7 +32,7 @@ public class Tower1 : Tower {
 				//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
 				xDiff = enemy.position.x - transform.position.x; 
 				yDiff = enemy.position.y - transform.position.y;
-				
+
 				radians = Mathf.Atan2(yDiff, xDiff);
 				degrees = ((radians * 180) / Mathf.PI)+offsetRot;
 

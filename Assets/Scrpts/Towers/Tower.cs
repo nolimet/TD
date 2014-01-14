@@ -31,21 +31,6 @@ public class Tower : MonoBehaviour {
 		}
 	}
 
-	/*void OnTriggerExit (Collider col) {
-		if (col.gameObject.tag == "Enemy") {
-			if (targetsInRange.Contains(col.gameObject.transform)) {
-				targetsInRange.Remove(col.gameObject.transform);
-				if (col.gameObject.transform == target) {
-					if (targetsInRange.Count >= 1) {
-						target = targetsInRange[0];
-					} else {
-						target = null;
-					}
-				}
-			}
-		}
-	}*/
-
 	protected void Shoot () {
 		GameObject bullet = Instantiate(Resources.Load<GameObject>("Bullets/Bullets1"), transform.position, Quaternion.identity) as GameObject;
 		Bullet1 bulletScript = bullet.GetComponent<Bullet1>();
