@@ -54,6 +54,7 @@ public class Bullet1 : MonoBehaviour {
 				
 				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
 
+
 				Vector2 move = new Vector2();
 
 				//move.x = Mathf.Cos(transform.rotation.z * Mathf.PI) * bulletSpeed;

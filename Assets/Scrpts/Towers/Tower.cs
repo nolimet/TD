@@ -8,9 +8,10 @@ public class Tower : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
-			enemy = col.gameObject.transform;
+
 			enemiesInRange.Add(col.gameObject.transform);
-			Debug.Log(enemiesInRange.Count);
+			enemy = enemiesInRange[0];
+			//Debug.Log(enemiesInRange.Count);
 		}
 	}
 
@@ -22,7 +23,7 @@ public class Tower : MonoBehaviour {
 					if (enemiesInRange.Count >= 1) {
 						enemy = enemiesInRange[0];
 					} else {
-						Debug.Log("testing");
+						//Debug.Log("testing");
 						enemy = null;
 						enemiesInRange.Remove(col.gameObject.transform);
 					}
