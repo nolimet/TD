@@ -940,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  PlayerNumb: 1
+  PlayerNumb: 0
   rotationSpeed: 3
   isSmall: 1
 --- !u!212 &422558537
@@ -1429,6 +1429,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
+      propertyPath: PlayerNumb
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2027,6 +2031,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: Targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 422558538}
+    - target: {fileID: 11400002, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: Targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 1807885944}
+    - target: {fileID: 11400002, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: accurcy
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
   m_RootGameObject: {fileID: 1243307577}
@@ -2139,12 +2155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 422558538}
+  - {fileID: 1807885944}
   SwitchCamPos: 32
   MoveTime: 1
   speed: 1
-  accurcy: .100000001
+  accurcy: 2
 --- !u!81 &1243307580
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2805,6 +2821,10 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ae9bca24a0b0fce4798d40658ef97c83, type: 2}
+      propertyPath: PlayerNumb
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae9bca24a0b0fce4798d40658ef97c83, type: 2}
   m_RootGameObject: {fileID: 422558533}
@@ -3187,7 +3207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  PlayerNumb: 0
+  PlayerNumb: 1
   rotationSpeed: 3
   isSmall: 0
 --- !u!212 &1807885943
