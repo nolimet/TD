@@ -38,6 +38,8 @@ public class CameraManager : MonoBehaviour {
 					Vector3 dir = Targets[GlobalStatics.currentChar].position - transform.position;
 					dir.z=0;
 					transform.Translate(dir*speed*Time.deltaTime);
+					Debug.DrawLine(transform.position,temp,Color.green);
+
 				}
 			}
 		}
