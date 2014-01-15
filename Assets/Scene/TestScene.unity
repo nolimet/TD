@@ -1969,7 +1969,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2810,7 +2810,7 @@ MonoBehaviour:
   Doors:
   - {fileID: 1303513464}
   - {fileID: 1237247833}
-  Dooropen: 0
+  Dooropen: 1
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!212 &1248662480
 SpriteRenderer:
@@ -3296,9 +3296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e823a571f9d7e499b190312c0d0c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExitGame: 0
   LoadLevel: 0
   hasRenderer: 0
+  ExitGame: 0
   newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &1740029843
 BoxCollider:
@@ -3710,6 +3710,18 @@ Prefab:
     - target: {fileID: 11400002, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
       propertyPath: speed
       value: 9.85999966
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d49460619d26b14fb82087dfb786d59, type: 2}
