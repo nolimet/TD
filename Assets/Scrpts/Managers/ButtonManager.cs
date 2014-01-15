@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class ButtonManager:MonoBehaviour {
-	public bool ExitGame = false;
 
 	public int LoadLevel;
 
 	public bool hasRenderer;
+	public bool ExitGame = false;
 
 	public Color newColor;
 	private Color originalColor;

@@ -26,4 +26,19 @@ public class Win : MonoBehaviour {
 			break;
 		}
 	}
+
+	void OnTriggerExit2D (Collider2D col){
+		switch (col.name) {
+		case "Player1":
+			activate1 = false;
+			break;
+			
+		case "Player2":
+			activate2 = false;
+			break;
+			
+		default:
+			break;
+		}
+	}
 }
