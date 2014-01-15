@@ -23,7 +23,7 @@ public class Door : MonoBehaviour {
 		{
 			temp=origen;
 		}
-		//Vector3 temp = Targets[GlobalStatics.currentChar].position;
+
 		temp.z = transform.position.z;
 		
 		if(Vector3.Distance(transform.position,temp)>=accuracy){

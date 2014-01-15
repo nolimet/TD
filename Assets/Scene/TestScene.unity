@@ -2539,6 +2539,7 @@ MonoBehaviour:
   Doors:
   - {fileID: 1303513464}
   - {fileID: 1237247833}
+  Dooropen: 0
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!212 &1173220199
 SpriteRenderer:
@@ -2809,6 +2810,7 @@ MonoBehaviour:
   Doors:
   - {fileID: 1303513464}
   - {fileID: 1237247833}
+  Dooropen: 0
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!212 &1248662480
 SpriteRenderer:

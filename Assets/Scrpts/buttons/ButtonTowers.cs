@@ -3,11 +3,13 @@ using System.Collections;
 
 public class ButtonTowers: MonoBehaviour {
 
+	//player that activateds
 	public GameObject Trigger;
-	//public GameObject Controling;
-	public GameObject[] Towers;
-	private Vector2 orginalForce;
 
+	//controling objects
+	public GameObject[] Towers;
+
+	//renderers
 	private Sprite SpInactive;
 	public Sprite spActive;
 	private SpriteRenderer spriteRenderer;
