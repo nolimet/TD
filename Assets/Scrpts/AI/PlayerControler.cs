@@ -78,7 +78,6 @@ public class PlayerControler : MonoBehaviour {
 				status=statusenu.Normal;
 				break;
 			case GlobalStatics.dirtTag:
-				Debug.Log(transform.tag);
 				transform.tag = GlobalStatics.playerTag;
 				break;
 			}

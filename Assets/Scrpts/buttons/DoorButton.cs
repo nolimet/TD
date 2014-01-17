@@ -11,6 +11,7 @@ public class DoorButton : MonoBehaviour {
 
 	//default setting of doors;
 	public bool Dooropen = false;
+	public bool Toggle=false;
 	//renderers
 	public Sprite spActive;
 	private Sprite SpInactive;
@@ -37,13 +38,15 @@ public class DoorButton : MonoBehaviour {
 	}
 	
 	void OnTriggerExit2D (Collider2D col) {
-		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
-			spriteRenderer.sprite=SpInactive;
+		if(!Toggle){
+			if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+				spriteRenderer.sprite=SpInactive;
 
-			//loop goes through each door and closes it;
-			foreach (GameObject Controling in Doors){
-				Door conChange = Controling.GetComponent<Door>();
-				conChange.opened=!Dooropen;
+				//loop goes through each door and closes it;
+				foreach (GameObject Controling in Doors){
+					Door conChange = Controling.GetComponent<Door>();
+					conChange.opened=!Dooropen;
+				}
 			}
 		}
 	}

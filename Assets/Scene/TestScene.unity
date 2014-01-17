@@ -86,6 +86,7 @@ GameObject:
   - 114: {fileID: 54225599}
   - 50: {fileID: 54225598}
   - 58: {fileID: 54225597}
+  - 114: {fileID: 54225601}
   m_Layer: 0
   m_Name: playerFast
   m_TagString: Player
@@ -172,6 +173,39 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 6d680ebdcf7d37348800094028b76452, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &54225601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: ae9bca24a0b0fce4798d40658ef97c83,
+    type: 2}
+  m_PrefabInternal: {fileID: 1397723443}
+  m_GameObject: {fileID: 54225595}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eace1fb53469114286b7d0553d48220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300002, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300004, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300006, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300008, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300010, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300012, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300014, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300016, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300018, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300020, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300022, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300024, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300026, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300028, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300030, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300032, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300034, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  - {fileID: 21300036, guid: a56896ec151c3dd4393ec07d06e49a3e, type: 3}
+  interval: 0
 --- !u!1 &70300157
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,6 +2169,7 @@ GameObject:
   - 212: {fileID: 869930993}
   - 114: {fileID: 869930992}
   - 50: {fileID: 869930991}
+  - 58: {fileID: 869930994}
   - 58: {fileID: 869930990}
   m_Layer: 0
   m_Name: playerBig
@@ -2151,7 +2186,7 @@ Transform:
   m_GameObject: {fileID: 869930988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.53334367, y: .567779124, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!58 &869930990
@@ -2194,7 +2229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  PlayerNumb: 0
+  PlayerNumb: 1
   rotationSpeed: 3
   isSmall: 0
 --- !u!212 &869930993
@@ -2221,6 +2256,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 1ca34be83ed6dfc4e9fda35fb3031025, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!58 &869930994
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5800000, guid: d1ea760a6e105c44dafe84fec3c510d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1534263601}
+  m_GameObject: {fileID: 869930988}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .639999986
+  m_Center: {x: 0, y: 0}
 --- !u!1 &961732984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,6 +2303,7 @@ MonoBehaviour:
   - {fileID: 1782579943}
   - {fileID: 517520679}
   - {fileID: 518317171}
+  Toggle: 0
   spActive: {fileID: 21300002, guid: 448c95b5ec6c6604e92818b99750ac6b, type: 3}
 --- !u!212 &961732986
 SpriteRenderer:
@@ -2540,6 +2588,7 @@ MonoBehaviour:
   - {fileID: 1303513464}
   - {fileID: 1237247833}
   Dooropen: 0
+  Toggle: 0
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!212 &1173220199
 SpriteRenderer:
@@ -2811,6 +2860,7 @@ MonoBehaviour:
   - {fileID: 1303513464}
   - {fileID: 1237247833}
   Dooropen: 1
+  Toggle: 0
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!212 &1248662480
 SpriteRenderer:
@@ -2995,6 +3045,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae9bca24a0b0fce4798d40658ef97c83, type: 2}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ae9bca24a0b0fce4798d40658ef97c83, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ae9bca24a0b0fce4798d40658ef97c83, type: 2}
+      propertyPath: PlayerNumb
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -9,6 +9,9 @@ public class ButtonTowers: MonoBehaviour {
 	//controling objects
 	public GameObject[] Towers;
 
+	//bools
+	public bool Toggle = false;
+
 	//renderers
 	private Sprite SpInactive;
 	public Sprite spActive;
@@ -32,12 +35,14 @@ public class ButtonTowers: MonoBehaviour {
 	}
 	
 	void OnTriggerExit2D (Collider2D col) {
-		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
-			spriteRenderer.sprite=SpInactive;
+		if(!Toggle){
+			if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+				spriteRenderer.sprite=SpInactive;
 
-			foreach (GameObject Controling in Towers){
-				TowerControler conChange = Controling.GetComponent<TowerControler>();
-				conChange.Actived=true;
+				foreach (GameObject Controling in Towers){
+					TowerControler conChange = Controling.GetComponent<TowerControler>();
+					conChange.Actived=true;
+				}
 			}
 		}
 	}

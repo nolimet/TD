@@ -16,14 +16,15 @@ public class spriteAnimation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		time+=interval*Time.deltaTime;
+		time+=Time.deltaTime;
 
 		if(time>=interval)
 		{
+			Debug.Log (index);
 			index++;
 			time=0;
 		}
-		if(index>=interval*sprites.Length)
+		if(index>=sprites.Length)
 		{
 			index=0;
 		}
