@@ -20,7 +20,7 @@ public class spriteAnimation : MonoBehaviour {
 
 		if(time>=interval)
 		{
-			Debug.Log (index);
+			//Debug.Log (index);
 			index++;
 			time=0;
 		}

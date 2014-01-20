@@ -15,7 +15,8 @@ public class TowerControler : Tower {
 
 	private Vector3 tempPos;
 	private bool paused = false;
-	public bool Actived = true;
+	public bool actived = true;
+	public bool turning = false;
 
 	void OnPauseGame ()
 	{
@@ -30,8 +31,11 @@ public class TowerControler : Tower {
 	void Update () {
 		if(!paused){
 			if(enemy){
-				//if (enemy.tag!=GlobalStatics.diggingTag) {
-					if(Actived){
+				if(actived){
+					if (turning) {
+						transform.Rotate(Vector3.forward, 180 * Time.deltaTime);
+						time += fireRate * Time.deltaTime;
+					} else {
 						//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
 						xDiff = enemy.position.x - transform.position.x; 
 						yDiff = enemy.position.y - transform.position.y;
@@ -42,13 +46,13 @@ public class TowerControler : Tower {
 						transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
 
 						time += fireRate * Time.deltaTime;
+					}
 
-						if (time >= 0.5) {
-							Shoot();
+					if (time >= 0.5) {
+						Shoot();
 
-							time = 0;
-						}
-					//}
+						time = 0;
+					}
 				}
 			}
 		}
