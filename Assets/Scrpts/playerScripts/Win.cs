@@ -4,11 +4,12 @@ using System.Collections;
 public class Win : MonoBehaviour {
 	bool activate1 = false;
 	bool activate2 = false;
+	public int loadLevel;
 	
 	// Update is called once per frame
 	void Update () {
 		if (activate1 && activate2) {
-			Application.LoadLevel(2);
+			Application.LoadLevel(loadLevel);
 		}
 	}
 

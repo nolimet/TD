@@ -86,6 +86,8 @@ public class Bullet1 : MonoBehaviour {
 			PlayerControler playercontrol = col.gameObject.GetComponent<PlayerControler>();
 			playercontrol.hit(damage);
 			Destroy(gameObject);
+		}else if(col.tag == GlobalStatics.diggingTag){
+			Destroy(gameObject);
 		}
 	}
 }

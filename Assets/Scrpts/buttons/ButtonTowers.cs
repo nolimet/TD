@@ -30,6 +30,7 @@ public class ButtonTowers: MonoBehaviour {
 	}
 
 	void Update(){
+<<<<<<< HEAD
 		if(Toggle&&!paused){
 			if(!towersActive){
 				timer+=Time.deltaTime;
@@ -42,13 +43,30 @@ public class ButtonTowers: MonoBehaviour {
 					foreach (GameObject Controling in Towers){
 						TowerControler conChange = Controling.GetComponent<TowerControler>();
 						conChange.actived=true;
+=======
+		if(!paused){
+			if(Toggle){
+				if(!towersActive){
+					timer+=Time.deltaTime;
+					Debug.Log(timer);
+					if(timer>=timeActive)
+					{
+						timer=0;
+						spriteRenderer.sprite=SpInactive;
+						towersActive=true;
+						foreach (GameObject Controling in Towers){
+							TowerControler conChange = Controling.GetComponent<TowerControler>();
+							conChange.Actived=true;
+						}
+>>>>>>> 68031bd598023f458276025676d45203711ea72b
 					}
 				}
 			}
 		}
 	}
 	void OnTriggerEnter2D (Collider2D col) {
-		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+		Debug.Log ("triggerd");
+		if(Trigger == col.gameObject){
 			spriteRenderer.sprite=spActive;
 			towersActive = false;
 			foreach (GameObject Controling in Towers){
@@ -60,7 +78,7 @@ public class ButtonTowers: MonoBehaviour {
 	
 	void OnTriggerExit2D (Collider2D col) {
 		if(!Toggle){
-			if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+			if(Trigger == col.gameObject){
 				spriteRenderer.sprite=SpInactive;
 
 				foreach (GameObject Controling in Towers){
@@ -68,6 +86,8 @@ public class ButtonTowers: MonoBehaviour {
 					conChange.actived=true;
 				}
 			}
+		}else{
+			timer=0;
 		}
 	}
 	void OnPauseGame ()
