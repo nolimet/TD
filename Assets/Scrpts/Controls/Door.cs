@@ -16,6 +16,8 @@ public class Door : MonoBehaviour {
 	}
 
 	void Update () {
+		Quaternion temprot = transform.rotation;
+		transform.rotation=Quaternion.identity;
 		Vector3 temp = new Vector3();
 		if(opened){
 			temp=origen+MoveAmount;
@@ -31,5 +33,6 @@ public class Door : MonoBehaviour {
 			dir.z=0;
 			transform.Translate(dir*speed*Time.deltaTime);
 		}
+		transform.rotation=temprot;
 	}
 }
