@@ -6,7 +6,8 @@ public class Bullet1 : MonoBehaviour {
 	private Transform enemy;
 
 	//integers
-	private int lifeTime = 5;
+	private int lifeTime = 4;
+	public int damage = 1;
 
 	//floats
 	private float deathTimer;
@@ -65,7 +66,7 @@ public class Bullet1 : MonoBehaviour {
 
 				rigidbody2D.velocity = move;
 
-				deathTimer += 10 * Time.deltaTime;
+				deathTimer += Time.deltaTime;
 
 				if (deathTimer >= lifeTime) {
 					Destroy(gameObject);
@@ -82,6 +83,8 @@ public class Bullet1 : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col) {
 		if (col.tag == GlobalStatics.playerTag) {
+			PlayerControler playercontrol = col.gameObject.GetComponent<PlayerControler>();
+			playercontrol.hit(damage);
 			Destroy(gameObject);
 		}
 	}
