@@ -68,6 +68,8 @@ public class ButtonTowers: MonoBehaviour {
 					conChange.Actived=true;
 				}
 			}
+		}else{
+			timer=0;
 		}
 	}
 	void OnPauseGame ()
