@@ -9,6 +9,7 @@ public class PlayerControler : MonoBehaviour {
 	public float rotationSpeed = 3f;
 	public bool isSmall = true;
 	private GameObject hitFan;
+	private int health = 100;
 	private enum statusenu{
 		Normal,
 		Fan,
@@ -25,7 +26,15 @@ public class PlayerControler : MonoBehaviour {
 	{
 		paused = false;
 	}
-	
+
+	public void hit(int damage){
+		health-=damage;
+		Debug.Log("health: "+health);
+		if(health<=0){
+			Application.LoadLevel(Application.loadedLevel);
+		}
+	}
+
 	void Update ()
 	{
 		if (!paused) {
