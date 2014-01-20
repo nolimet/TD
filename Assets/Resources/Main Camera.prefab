@@ -138,7 +138,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -225,9 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e823a571f9d7e499b190312c0d0c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExitGame: 0
   LoadLevel: 0
   hasRenderer: 0
+  ExitGame: 0
   newColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!124 &12400000
 Behaviour:
@@ -255,7 +255,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: fa46c9372e8859f4f9e442ac0f347a37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -278,7 +278,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: b3d7a3328ff3c52438b807abe9a0e71f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
