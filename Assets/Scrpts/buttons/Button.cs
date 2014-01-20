@@ -30,7 +30,7 @@ public class Button : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D col) {
-		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+		if(Trigger == col.gameObject){
 			spriteRenderer.sprite=spActive;
 
 			AddForce conChange = Controling.GetComponent<AddForce>();
@@ -45,7 +45,7 @@ public class Button : MonoBehaviour {
 	}
 	
 	void OnTriggerExit2D (Collider2D col) {
-		if(col.tag == GlobalStatics.playerTag && Trigger == col.gameObject){
+		if(Trigger == col.gameObject){
 			spriteRenderer.sprite=spInActive;
 			AddForce conChange = Controling.GetComponent<AddForce>();
 			conChange.force=orginalForce;
