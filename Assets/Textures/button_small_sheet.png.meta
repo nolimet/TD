@@ -44,19 +44,19 @@ TextureImporter:
     - name: button_small_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 22
+        y: 21
+        width: 85
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: button_small_sheet_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 148
+        y: 21
+        width: 85
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 

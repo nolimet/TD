@@ -45,11 +45,9 @@ public class PlayerControler : MonoBehaviour {
 			else if(status==statusenu.Normal){
 				rigidbody2D.velocity=new Vector2();
 			}
-			switch(status){
-			case statusenu.Fan:
+			if(status==statusenu.Fan){
 				AddForce force = hitFan.GetComponent<AddForce>();
 				rigidbody2D.AddForce(force.force);
-				break;
 			}
 		}
 		else{
@@ -80,7 +78,6 @@ public class PlayerControler : MonoBehaviour {
 				status=statusenu.Normal;
 				break;
 			case GlobalStatics.dirtTag:
-				Debug.Log(transform.tag);
 				transform.tag = GlobalStatics.playerTag;
 				break;
 			}

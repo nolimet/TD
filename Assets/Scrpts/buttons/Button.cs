@@ -10,6 +10,7 @@ public class Button : MonoBehaviour {
 
 	//setTos
 	public Vector2 setForceTo = new Vector2();
+
 	//orginal vars
 	private Vector2 orginalForce;
 	private float originalLifetime;

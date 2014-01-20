@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1aa8b0fe89c6f6049ab55fec81317b93
+guid: 4f966743d5fbb6e49a5b1b28b14b7111
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -30,33 +30,51 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: button_large_sheet_0
+    - name: stonefloor_001_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 114
-        height: 114
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: button_large_sheet_1
+    - name: stonefloor_001_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 7
-        width: 114
-        height: 114
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: stonefloor_001_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: stonefloor_001_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
