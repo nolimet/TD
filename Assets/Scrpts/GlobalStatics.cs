@@ -13,6 +13,8 @@ public class GlobalStatics : MonoBehaviour {
 	public const string dirtTag = "Dirt";
 	public const string diggingTag = "Digging";
 
+	public static float Gamma = 0.05f;
+
 	//Character select
 	public enum Characters {
 		enemyFast,
