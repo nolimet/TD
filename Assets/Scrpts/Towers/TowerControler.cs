@@ -29,7 +29,7 @@ public class TowerControler : Tower {
 
 	void Update () {
 		if(!paused){
-			if (enemy.tag!=GlobalStatics.diggingTag) {
+			//if (enemy.tag!=GlobalStatics.diggingTag) {
 				if(Actived){
 					//transform.rotation = Quaternion.FromToRotation(Vector3.up - transform.position, enemy.transform.position - transform.position);
 					xDiff = enemy.position.x - transform.position.x; 
@@ -47,7 +47,7 @@ public class TowerControler : Tower {
 
 						time = 0;
 					}
-				}
+				//}
 			}
 		}
 	}
