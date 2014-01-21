@@ -41,7 +41,11 @@ public class ButtonTowers: MonoBehaviour {
 						towersActive=true;
 						foreach (GameObject Controling in Towers){
 							TowerControler conChange = Controling.GetComponent<TowerControler>();
+<<<<<<< HEAD
 							conChange.actived = true;
+=======
+							conChange.actived=true;
+>>>>>>> bf4216021b9a89b1406e85123da2bdc0689f2ee5
 						}
 					}
 				}

@@ -6,12 +6,12 @@ public class spriteAnimation : MonoBehaviour {
 	public Sprite[] sprites;
 	public float interval;
 	private float time;
-	private SpriteRenderer renderer;
+	private SpriteRenderer spRenderer;
 	private int index;
 
 	// Use this for initialization
 	void Start () {
-		renderer=GetComponent<SpriteRenderer>();
+		spRenderer=GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -28,6 +28,6 @@ public class spriteAnimation : MonoBehaviour {
 		{
 			index=0;
 		}
-		renderer.sprite=sprites[index];
+		spRenderer.sprite=sprites[index];
 	}
 }

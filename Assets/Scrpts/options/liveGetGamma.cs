@@ -3,13 +3,13 @@ using System.Collections;
 
 public class liveGetGamma : MonoBehaviour {
 
-	private Light light;
+	private Light lamp;
 	
 	void Start(){
-		light=GetComponent<Light>();
+		lamp=GetComponent<Light>();
 	}
 
 	void Update(){
-		light.intensity=GlobalStatics.Gamma;
+		lamp.intensity=GlobalStatics.Gamma;
 	}
 }
