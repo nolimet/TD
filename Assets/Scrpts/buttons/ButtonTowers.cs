@@ -30,20 +30,6 @@ public class ButtonTowers: MonoBehaviour {
 	}
 
 	void Update(){
-<<<<<<< HEAD
-		if(Toggle&&!paused){
-			if(!towersActive){
-				timer+=Time.deltaTime;
-				Debug.Log(timer);
-				if(timer>=timeActive)
-				{
-					timer=0;
-					spriteRenderer.sprite=SpInactive;
-					towersActive=true;
-					foreach (GameObject Controling in Towers){
-						TowerControler conChange = Controling.GetComponent<TowerControler>();
-						conChange.actived=true;
-=======
 		if(!paused){
 			if(Toggle){
 				if(!towersActive){
@@ -56,9 +42,8 @@ public class ButtonTowers: MonoBehaviour {
 						towersActive=true;
 						foreach (GameObject Controling in Towers){
 							TowerControler conChange = Controling.GetComponent<TowerControler>();
-							conChange.Actived=true;
+							conChange.actived=true;
 						}
->>>>>>> 68031bd598023f458276025676d45203711ea72b
 					}
 				}
 			}

@@ -3,10 +3,10 @@ using System.Collections;
 
 public class getGamma : MonoBehaviour {
 
-	private Light light;
+	private Light lamp;
 	
 	void Start(){
-		light=GetComponent<Light>();
-		light.intensity=GlobalStatics.Gamma;
+		lamp=GetComponent<Light>();
+		lamp.intensity=GlobalStatics.Gamma;
 	}
 }
