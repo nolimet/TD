@@ -5648,7 +5648,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12856,11 +12856,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.5628834
+      value: -.686307907
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.94510818
+      value: -5.49955988
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12904,7 +12904,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 525424915}
   - 212: {fileID: 525424917}
-  - 114: {fileID: 525424916}
   m_Layer: 0
   m_Name: Rotating Turret
   m_TagString: Untagged
@@ -12924,21 +12923,6 @@ Transform:
   m_Children:
   - {fileID: 250767093}
   m_Father: {fileID: 0}
---- !u!114 &525424916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: b05a3194a8968d548a96c1503746aa25,
-    type: 2}
-  m_PrefabInternal: {fileID: 785046573}
-  m_GameObject: {fileID: 525424914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetRot: -90
-  actived: 1
-  turning: 1
 --- !u!212 &525424917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12959,7 +12943,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 5f1bb18f621468b4890e361ead77be27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17959,6 +17943,7 @@ GameObject:
   - 212: {fileID: 788144909}
   - 114: {fileID: 788144908}
   - 61: {fileID: 788144907}
+  - 114: {fileID: 788144911}
   m_Layer: 0
   m_Name: fanButton
   m_TagString: Untagged
@@ -18008,14 +17993,14 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8c0f724e8945a64428e154f99be0e3a0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18030,6 +18015,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1627091098}
+--- !u!114 &788144911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 5fcf406bcd3a1924f912d6f81739bf19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1103520505}
+  m_GameObject: {fileID: 788144906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e6905921729c44999c8f60f952d073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trigger: {fileID: 0}
+  Doors:
+  - {fileID: 0}
+  - {fileID: 0}
+  Dooropen: 1
+  Toggle: 0
+  spActive: {fileID: 21300000, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
 --- !u!1 &788862864
 GameObject:
   m_ObjectHideFlags: 0
@@ -24392,7 +24396,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1111187123}
   - 212: {fileID: 1111187124}
-  - 114: {fileID: 1111187125}
   m_Layer: 0
   m_Name: turret_base_0
   m_TagString: Untagged
@@ -24432,25 +24435,10 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 5f1bb18f621468b4890e361ead77be27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &1111187125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: b05a3194a8968d548a96c1503746aa25,
-    type: 2}
-  m_PrefabInternal: {fileID: 1215228603}
-  m_GameObject: {fileID: 1111187122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetRot: -90
-  actived: 1
-  turning: 0
 --- !u!1 &1119190610
 GameObject:
   m_ObjectHideFlags: 0
@@ -24788,7 +24776,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32123,7 +32111,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1459308271}
   - 212: {fileID: 1459308270}
-  - 114: {fileID: 1459308272}
   m_Layer: 0
   m_Name: turret_base_0
   m_TagString: Untagged
@@ -32151,7 +32138,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 5f1bb18f621468b4890e361ead77be27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -32167,21 +32154,6 @@ Transform:
   m_Children:
   - {fileID: 1132990720}
   m_Father: {fileID: 1270614175}
---- !u!114 &1459308272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: b05a3194a8968d548a96c1503746aa25,
-    type: 2}
-  m_PrefabInternal: {fileID: 270285409}
-  m_GameObject: {fileID: 1459308269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetRot: -90
-  actived: 1
-  turning: 0
 --- !u!1 &1459595753
 GameObject:
   m_ObjectHideFlags: 0
@@ -39110,7 +39082,7 @@ Transform:
   m_PrefabInternal: {fileID: 521005068}
   m_GameObject: {fileID: 1807885939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.5628834, y: -3.94510818, z: 0}
+  m_LocalPosition: {x: -.686307907, y: -5.49955988, z: 0}
   m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42956,7 +42928,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -43053,7 +43025,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 0b58522ace6b6a946a164a7457bdd269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -44147,7 +44119,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1999242070}
   - 212: {fileID: 1999242071}
-  - 114: {fileID: 1999242072}
   m_Layer: 0
   m_Name: turret_base_0
   m_TagString: Untagged
@@ -44187,25 +44158,10 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 5f1bb18f621468b4890e361ead77be27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &1999242072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: b05a3194a8968d548a96c1503746aa25,
-    type: 2}
-  m_PrefabInternal: {fileID: 87074234}
-  m_GameObject: {fileID: 1999242069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c9efc96c0775343a64d833ff2549d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetRot: -90
-  actived: 1
-  turning: 0
 --- !u!1 &2005391356
 GameObject:
   m_ObjectHideFlags: 0
