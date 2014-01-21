@@ -78,6 +78,13 @@ public class PlayerControler : MonoBehaviour {
 				transform.tag = GlobalStatics.diggingTag;
 				break;
 			}
+			Animator ani = GetComponent<Animator>();
+
+			switch(other.name){
+				case "bullet":
+				ani.SetBool("hit",true);
+				break;
+			}
 		}
 	}
 	void OnTriggerExit2D(Collider2D other){

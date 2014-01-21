@@ -5611,7 +5611,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 5.9000001
+  m_Radius: 5.45144844
   m_Center: {x: 0, y: 0}
 --- !u!114 &250767091
 MonoBehaviour:
@@ -7166,7 +7166,7 @@ MonoBehaviour:
   Towers: []
   Toggle: 1
   spActive: {fileID: 21300002, guid: 1aa8b0fe89c6f6049ab55fec81317b93, type: 3}
-  timeActive: 4
+  timeActive: 8
 --- !u!1 &314655383
 GameObject:
   m_ObjectHideFlags: 0
@@ -12856,11 +12856,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.957191467
+      value: 22.5628834
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.87637424
+      value: -3.94510818
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1ea760a6e105c44dafe84fec3c510d3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12938,7 +12938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetRot: -90
   actived: 1
-  turning: 0
+  turning: 1
 --- !u!212 &525424917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17734,6 +17734,14 @@ Prefab:
     - target: {fileID: 100000, guid: b05a3194a8968d548a96c1503746aa25, type: 2}
       propertyPath: m_Name
       value: Rotating Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b05a3194a8968d548a96c1503746aa25, type: 2}
+      propertyPath: turning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: b05a3194a8968d548a96c1503746aa25, type: 2}
+      propertyPath: m_Radius
+      value: 5.45144844
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b05a3194a8968d548a96c1503746aa25, type: 2}
@@ -39102,7 +39110,7 @@ Transform:
   m_PrefabInternal: {fileID: 521005068}
   m_GameObject: {fileID: 1807885939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.957191467, y: -5.87637424, z: 0}
+  m_LocalPosition: {x: 22.5628834, y: -3.94510818, z: 0}
   m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
