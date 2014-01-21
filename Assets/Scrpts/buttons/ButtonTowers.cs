@@ -36,7 +36,7 @@ public class ButtonTowers: MonoBehaviour {
 					timer+=Time.deltaTime;
 					Debug.Log(timer);
 					if(timer>=timeActive) {
-						timer=0;
+						timer = 0;
 						spriteRenderer.sprite=SpInactive;
 						towersActive=true;
 						foreach (GameObject Controling in Towers){

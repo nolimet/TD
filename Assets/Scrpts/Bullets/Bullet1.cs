@@ -46,15 +46,14 @@ public class Bullet1 : MonoBehaviour {
 	void Update () {
 		if(!paused){
 			if(enemy!=null){
-
 				float xDiff = enemy.position.x - transform.position.x; 
 				float yDiff = enemy.position.y - transform.position.y;
 				
 				float radians = Mathf.Atan2(yDiff, xDiff);
-				float degrees = ((radians * 180) / Mathf.PI)+offsetRot;
+				//Debug.Log(radians);
+				float degrees = ((radians * 180) / Mathf.PI) + offsetRot;
 				
 				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, degrees);
-
 
 				Vector2 move = new Vector2();
 
