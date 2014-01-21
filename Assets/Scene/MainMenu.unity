@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e823a571f9d7e499b190312c0d0c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadLevel: 2
+  LoadLevel: 1
   hasRenderer: 0
   ExitGame: 0
   newColor: {r: .852941155, g: .200692028, b: .200692028, a: 1}
