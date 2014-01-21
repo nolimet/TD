@@ -4,7 +4,7 @@ using System.Collections;
 public class Bullet2 : MonoBehaviour {
 	private bool paused = false;
 
-	private int lifeTime = 4;
+	private int lifeTime = 2;
 	public int damage = 1;
 
 	private float deathTimer;
@@ -54,7 +54,7 @@ public class Bullet2 : MonoBehaviour {
 			PlayerControler playercontrol = col.gameObject.GetComponent<PlayerControler>();
 			playercontrol.hit(damage);
 			Destroy(gameObject);
-		}else if(col.tag == GlobalStatics.diggingTag){
+		}else if(col.tag == GlobalStatics.diggingTag || col.tag == "Wall"){
 			Destroy(gameObject);
 		}
 	}
