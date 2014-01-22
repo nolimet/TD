@@ -409,7 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6143fcb979fdf4a88663e50e484c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos: {x: 650, y: 500}
+  rangex: 67.8000031
+  rangey: 89.9000015
 --- !u!4 &1703747083
 Transform:
   m_ObjectHideFlags: 0
