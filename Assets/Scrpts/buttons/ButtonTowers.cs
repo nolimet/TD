@@ -51,7 +51,7 @@ public class ButtonTowers: MonoBehaviour {
 		}
 	}
 	void OnTriggerEnter2D (Collider2D col) {
-		Debug.Log ("triggerd");
+		//Debug.Log ("triggerd");
 		if(Trigger == col.gameObject){
 			spriteRenderer.sprite=spActive;
 			towersActive = false;

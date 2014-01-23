@@ -26,7 +26,7 @@ public class torch : MonoBehaviour {
 				Lamp.intensity=Random.Range(minLamp,maxLamp);
 				randomLightTimer=Random.Range(randomLightIntervalRange.x,randomLightIntervalRange.y);
 				}
-				randomLightTimer-=Time.deltaTime;
+				randomLightTimer-=Time.deltaTime*5;
 			}
 
 		}
