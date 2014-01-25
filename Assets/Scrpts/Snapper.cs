@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
+//using UnityEditor;
 
-[ExecuteInEditMode()]
+//[ExecuteInEditMode()]
 public class Snapper : MonoBehaviour {
-	
+	/*
 	public float xStep;
 	public float yStep;
 	public float zStep;
@@ -31,5 +31,5 @@ public class Snapper : MonoBehaviour {
 		pos.z = ((float)gridSteps) * zStep;
 		
 		transform.position = pos;
-	}
+	}*/
 }
